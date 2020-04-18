@@ -6,6 +6,7 @@ from django.utils import timezone
 
 class book_store(models.Model):
     title = models.CharField(max_length=256, null=True)
+    publication = models.CharField(max_length=256, null= True)
     genre = models.CharField(max_length=64, null=True)
     link = models.URLField(null=True, max_length=512)
     author = models.CharField(max_length=128, null=True)
